@@ -1,0 +1,249 @@
+/* DESIGN SYSTEM */
+
+:root {
+    --primary: #9013FE;
+    --primary-gradient: linear-gradient(41.55deg, #941BFF 0%, #F185CE 100%);
+    --secondary: #2DCDD8;
+    --secondary-gradient: linear-gradient(221.55deg, #67E2B3 0%, #2DCDD8 100%);
+    --success: #7ED321;
+    --warning: #F96C44;
+    --danger: #D0021B;
+    --default: #ECEFF1;
+    --font: #303030;
+}
+body {
+    color: var(--font);
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.33px
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+.subheader {
+    font-weight: 300;
+}
+h1 {
+	font-size: 36px;
+	letter-spacing: 0.75px;
+	line-height: 49px;
+}
+h2 {
+	font-size: 30px;
+	letter-spacing: 0.63px;
+    line-height: 41px;
+}
+h3 {
+	letter-spacing: 0.54px;
+	line-height: 36px;
+    padding: 10px 0px;
+}
+h4 {
+	font-size: 22px;
+	letter-spacing: 0.46px;
+	line-height: 30px;
+}
+h5 {
+	font-size: 18px;
+	letter-spacing: 0.38px;
+	line-height: 24px;
+}
+h6 {
+	font-size: 16px;
+	letter-spacing: 0.33px;
+	line-height: 22px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+.underline-link {
+    border-bottom: 3px solid #3380FF;
+    font-weight: 600;
+}
+.btn-small {
+	height: 32px;
+	width: 98px;
+	background-color: var(--default);
+}
+.btn-med {
+    height: 42px;
+	width: 118px;
+	background-color: var(--default);
+}
+.btn-large {
+    height: 52px;
+	width: 138px;
+	background-color: var(--default);
+}
+.pill-small {
+	height: 32px;
+	width: 98px;
+	border-radius: 15px;
+	background-color: var(--primary-gradient);;
+}
+.pill-med {
+	height: 42px;
+	width: 118px;
+	border-radius: 21px;
+	background-color: var(--default);
+}
+.pill-large {
+	height: 52px;
+	width: 138px;
+	border-radius: 26px;
+	background-color: var(--default);
+}
+/* END DESIGN SYSTEM  */
+
+
+/* CUSTOM STYLES */
+/* section */
+.section {
+    padding: 4rem 0rem;
+}
+.section p {
+    padding: 5px 0px;
+}
+.btn:hover,.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+    color: white;
+ }
+/* nav */
+.custom-dark {
+    background-color: #272930!important;
+}
+.navbar-nav { 
+    flex-direction: row;
+}
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-link {
+    padding: 5px 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+.generic-logo {
+	max-height: 12px;
+    max-width: 139px;
+}
+.log-in {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+}
+.sign-up {	
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+.sign-up-bg {
+    background: var(--primary-gradient);
+}
+/* header */
+.jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+.hero {
+    width: 100%;
+    background-image: url("../images/hero-background.png");
+    background-color: rgba(238,234,238,0.81);
+    background-attachment: fixed;
+}
+.book-a-demo {
+	color: #FFFFFF;
+	font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    justify-content: center;
+}
+.book-a-demo-bg {
+	height: 52px;
+	width: 189px;
+    background: var(--secondary-gradient);
+    margin: 20px 0px;
+}
+/* video */
+.youtube-vid {
+    background-color: var(--default);
+    text-align: center;
+}
+.vid-container {
+    padding: 2rem;
+}
+/* bottom nav */
+.features {
+    background-color: #F6F6F6;
+}
+.features ul {
+    margin-left: -40px;
+}
+.bottom-nav li {
+    padding: 5px 0px;
+}
+.bottom-nav-title {
+	font-weight: bold;
+}
+.bottom-nav-item {
+    color: #303030;
+    font-family: "Open Sans";
+    font-size: 14px;
+    letter-spacing: 0.29px;
+    line-height: 19px;
+    list-style-type: none;
+}
+/* footer */
+.footer {
+    background-color: #272930;
+    padding: 1.4rem 0rem;
+}
+.footer p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.29px;
+    line-height: 19px;
+}
+.footer .fab {
+    color: #FFFFFF;
+    padding: 0px 10px;
+}
+.socials {
+    display:flex;
+    justify-content:flex-end
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+    .space {
+        padding: 1rem 0rem;
+    }
+    .footer {
+        padding: 2rem 0rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .socials {
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 576px) {
+    .section {
+        padding: 2rem;
+    }
+    .log-in, .sign-up {
+        font-size: 10px;
+    }
+    .pill-small {
+        width: 75px;
+    }
+}
+
+
+
